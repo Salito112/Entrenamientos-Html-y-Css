@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Salito Coffee - Cafetería artesanal con los mejores productos locales" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&display=swap" rel="stylesheet">
+  <title>Salito Coffee</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Encabezado principal con logo y nombre -->
+  <header class="site-header">
+    <div class="container header-flex">
+      <img src="https://template.canva.com/EAGPJvtWGNE/1/0/1600w-pCV4L3VCMcs.jpg" alt="Logo Café " class="logo" />
+      <h1>Cafe de la Loma</h1>
+      <button class="menu-toggle" aria-label="Menú de navegación">&#9776;</button>
+    </div>
+      <!-- Navegación principal -->
+    <nav class="main-nav">
+      <ul class="nav-links">
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+        <li><a href="#reservas">Reservas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <!-- Sección Hero con imagen destacada -->
+  <section id="hero" class="hero">
+    <picture>
+      <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/d87f7431471371.56525b0a75ef9.jpg" alt="Interior de Café " />
+    </picture>
+    <div class="hero-text">
+      <h2>Tu café favorito en el corazón de la ciudad</h2>
+    </div>
+  </section>
+
+  <!-- Sección de menú con tres categorías -->
+  <main>
+    <section id="menu" class="menu">
+      <h2>Menú de Productos</h2>
+      <div class="menu-grid">
+        <article class="menu-item">
+          <img src="https://tse2.mm.bing.net/th?id=OIP.FgJuh1f3GIgKRiPQuxz4VAHaDt&pid=Api&P=0&h=180" alt="Café espresso" />
+          <h3>Cafés</h3>
+          <ul>
+            <li>Espresso</li>
+            <li>Capuccino</li>
+            <li>Latte</li>
+          </ul>
+        </article>
+
+        <article class="menu-item">
+          <img src="https://recetatorta.com/wp-content/uploads/2023/02/Cheesecake-de-zarzamora-1.jpg" alt="Postre casero" />
+          <h3>Postres</h3>
+          <ul>
+            <li>Brownie artesanal</li>
+            <li>Cheesecake de frutas</li>
+            <li>Pan de banano</li>
+          </ul>
+        </article>
+
+        <article class="menu-item">
+          <img src="https://tse2.mm.bing.net/th?id=OIP.gXR9R_S9ood9qgFo0BsBzAHaEB&pid=Api&P=0&h=180" alt="Bebida fría" />
+          <h3>Bebidas frías</h3>
+          <ul>
+            <li>Cold brew</li>
+            <li>Limonada con menta</li>
+            <li>Té helado</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sección "Sobre nosotros" -->
+    <section id="nosotros" class="about">
+      <h2>Sobre Nosotros</h2>
+      <p>Somos una cafetería artesanal que apoya a productores locales. En Café de la Loma, cada taza cuenta una historia. Ofrecemos un ambiente acogedor, ideal para trabajar, relajarse o compartir.</p>
+    </section>
+
+    <!-- Sección de ubicación y horarios -->
+    <section id="ubicacion" class="location">
+      <h2>Ubicación y Horarios</h2>
+      <div class="cont-ubicacion">
+      <div class="cont-horarios">
+        <ul>
+          <li>Lunes a Viernes: 8:00 AM - 8:00 PM</li>
+          <li>Sábados: 9:00 AM - 6:00 PM</li>
+          <li>Domingos: Cerrado</li>
+        </ul>
+      </div>
+      <!-- Integración de Google Maps opcional -->
+      <div id="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15865.343423984637!2d-75.58594559999999!3d6.2193664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429e1dab04e05%3A0x5a77c25c8a5faf3a!2sDe%20Moda%20Outlet!5e0!3m2!1ses!2sco!4v1749122523553!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    </section>
+
+    <!-- Formulario de reservas con validación básica -->
+    <section id="reservas" class="reservations">
+      <h2>Reserva tu mesa</h2>
+      <form id="formulario-reserva">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required />
+
+        <label for="personas">Personas:</label>
+        <input type="number" id="personas" name="personas" min="1" max="20" required />
+
+        <label for="mensaje">Mensaje adicional:</label>
+        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+        <button type="submit">Enviar reserva</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Pie de página con derechos -->
+  <footer class="site-footer">
+    <p>&copy; 2025 Salito Coffee. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
