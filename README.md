@@ -2,10 +2,6 @@
 
 Sitio web responsivo para una cafetería artesanal ficticia. Diseñado con HTML5, CSS3 y técnicas modernas de diseño web adaptativo.
 
-## 🌐 Demo
-
-Puedes ver una demostración del sitio aquí: [enlace-al-sitio-si-está-subido](#)
-
 ## 📌 Características
 
 - Diseño totalmente responsivo (escritorio, tablet y móvil)
